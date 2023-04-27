@@ -8,7 +8,8 @@
 </head>
 <body>
   <h1>Hello World</h1>
-  <p class="fsjs" id="fsjs2"><span>Lorem</span>, ipsum dolor.</p>
+  <p class="fsjs">Full Stack JavaScript - Class</p>
+  <p id="fsjs2">Full Stack JavaScript - ID</p>
   <ul>
     <li>one</li>
     <li>Two</li>
@@ -31,13 +32,24 @@
     // console.log(val.innerHTML)
     // console.log(val.innerText)
 
-    let val=document.getElementsByClassName("tech")
-    console.log(val)
-    console.log(val[0].innerText)
-    console.log(val[1].innerText)
-    val[1].innerHTML="Vyom"
+    // let val=document.getElementsByClassName("tech")
+    // console.log(val)
+    // console.log(val[0].innerText)
     // console.log(val[1].innerText)
-    val[2].innerHTML="Pundhir"
+    // val[1].innerHTML="Vyom"
+    // console.log(val[1].innerText)
+    // val[2].innerHTML="hello VYOM"
+
+    //QUERY SELECTOR
+    // let h1=document.querySelector("h1")
+    // console.log(h1);//here h1 is the variable
+
+    let h1=document.querySelector(".fsjs").innerText
+    console.log(h1)
+
+    let h2=document.querySelector("#fsjs2").innerText
+    console.log(h2)
+    
   </script>
 </body>
 </html>
